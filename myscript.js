@@ -29,13 +29,13 @@ console.log("hello... it begins");
 
 var getNumber = prompt("How many numbers do you want to test?");
 
-for (i = getNumber; i > 0; i--) {
+for (var i = 1; i <= getNumber; i += 1) {
 	if (i%3==0 && i%5==0) {
 		console.log(i, "fizzbuzz");
 	} else if (i%3==0) {
 		console.log(i, "fizz");
 	} else if (i%5==0) {
-		console.log(i,"fizz");
+		console.log(i,"buzz");
 	} else{
 		console.log(i);
 	};
